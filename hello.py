@@ -2,11 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    name = "Hoge"
+@app.route('/hello/<name>')
+def hello(name=None):
     #return name
-    return render_template('hello.html', title='flask test', name=name)
+    return render_template('hello.html', title='flask test', name=name) 
 
 ## 
 if __name__ == "__main__":
