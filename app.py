@@ -1,3 +1,5 @@
+## coding: UTF-8
+
 # Flask などの必要なライブラリをインポートする
 from flask import Flask, render_template, request, redirect, url_for
 import numpy as np
@@ -41,4 +43,4 @@ def post():
 
 if __name__ == '__main__':
     app.debug = True # デバッグモード有効化
-    app.run(host='0.0.0.0') # どこからでもアクセス可能に
+    # app.run(host='0.0.0.0') 
